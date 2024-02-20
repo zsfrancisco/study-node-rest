@@ -10,7 +10,7 @@ describe('App', () => {
         expect(Server).toHaveBeenCalledTimes(1);
         expect(Server).toHaveBeenCalledWith({
             port: envs.PORT,
-            public_path: envs.PUBLIC_PATH,
+            publicPath: envs.PUBLIC_PATH,
             routes: expect.any(Function)
         });
         expect(Server.prototype.start).toHaveBeenCalledTimes(1);
